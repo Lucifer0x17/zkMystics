@@ -14,6 +14,18 @@ zkMystics is built to ensure that people in the Evm ecosystem are able to verify
 
 we have built this project from zero to one providing core functionalities to the user by integrating SAFE's AA for smoother UX , CCIP for enabling crosschain compatibility, deploying subgraph to make the indexing faster ,using Polygon POS and Zkevm as the base chain on the other hand also utilzing zkevm's Lx-ly bridge which helps us tap the emerging polygon superchains, we have also brainstormed to provide utility at the intial stages of the project by integrating  Ape coin's ERC20 all this converges to make it a fullstack DAPP for verfying assests on the go
 
+# Contracts
+
+## Polygon zkEVM
+- zkMysticNFT Contract: [0x6D5b80FE7e0542E8EB89ebf5986dEAbb7eE708a3](https://testnet-zkevm.polygonscan.com/address/0x6D5b80FE7e0542E8EB89ebf5986dEAbb7eE708a3)
+
+- zkMysticSender Contract: [0x9d3F9d2166C03B256c762656b289cD8aaAdAF31D](https://testnet-zkevm.polygonscan.com/address/0x9d3F9d2166C03B256c762656b289cD8aaAdAF31D)
+- zkMysticSender Contract Subgraph: https://api.studio.thegraph.com/query/48418/zkmystics/v0.0.1
+
+## Goerli
+zkMysticReceiver Contract:
+zkMysticReceiver Contract Subgraph: 
+
 # 👊 Team
 
 Megabyte

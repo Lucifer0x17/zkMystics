@@ -65,8 +65,3 @@ $ anvil --help
 $ cast --help
 ```
 
-
-nft 0x6D5b80FE7e0542E8EB89ebf5986dEAbb7eE708a3
-
-sender:
-0x9d3F9d2166C03B256c762656b289cD8aaAdAF31D
