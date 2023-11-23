@@ -1,0 +1,8 @@
+{
+  "polygon-zkevm-testnet": {
+    "zkMysticSender": {
+      "address": "0xe9F24df4d4DaE60c9282e00d434B374aF9238f15",
+      "startBlock": 0
+    }
+  }
+}

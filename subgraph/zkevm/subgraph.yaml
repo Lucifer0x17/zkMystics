@@ -1,0 +1,36 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: zkMysticSender
+    network: polygon-zkevm-testnet
+    source:
+      address: "0xe9F24df4d4DaE60c9282e00d434B374aF9238f15"
+      abi: zkMysticSender
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ZkMystics__CheckStatusRequestCreated
+        - ZkMystics__CheckStatusRequestCreatedUsingChainlink
+        - ZkMystics__NFTMinted
+        - ZkMystics__StatusChecked
+        - ZkMystics__StatusFailed
+      abis:
+        - name: zkMysticSender
+          file: ./abis/zkMysticSender.json
+      eventHandlers:
+        - event: ZkMystics__CheckStatusRequestCreated(indexed address,indexed address)
+          handler: handleZkMystics__CheckStatusRequestCreated
+        - event: ZkMystics__CheckStatusRequestCreatedUsingChainlink(indexed address,indexed address,indexed bytes32)
+          handler: handleZkMystics__CheckStatusRequestCreatedUsingChainlink
+        - event: ZkMystics__NFTMinted(indexed address)
+          handler: handleZkMystics__NFTMinted
+        - event: ZkMystics__StatusChecked(indexed address,indexed address,uint8,indexed bool)
+          handler: handleZkMystics__StatusChecked
+        - event: ZkMystics__StatusFailed(indexed address)
+          handler: handleZkMystics__StatusFailed
+      file: ./src/zk-mystic-sender.ts
