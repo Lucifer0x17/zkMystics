@@ -1,0 +1,8 @@
+{
+  "goerli": {
+    "zkMysticReceiver": {
+      "address": "0x9b4B2dBDcA68B536b0B017deaD4a676f0F7b4Cd6",
+      "startBlock": 0
+    }
+  }
+}

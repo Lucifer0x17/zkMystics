@@ -1,0 +1,46 @@
+type ZkMystics__CheckStatusRequestCreated @entity(immutable: true) {
+  id: Bytes!
+  userAddress: Bytes! # address
+  assetAddress: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ZkMystics__CheckStatusRequestCreatedUsingChainlink
+  @entity(immutable: true) {
+  id: Bytes!
+  userAddress: Bytes! # address
+  assetAddress: Bytes! # address
+  messageId: Bytes! # bytes32
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ZkMystics__NFTMinted @entity(immutable: true) {
+  id: Bytes!
+  userAddress: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ZkMystics__StatusChecked @entity(immutable: true) {
+  id: Bytes!
+  userAddress: Bytes! # address
+  assetAddress: Bytes! # address
+  assetType: Int! # uint8
+  result: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ZkMystics__StatusFailed @entity(immutable: true) {
+  id: Bytes!
+  userAddress: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
